@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainLayout from './MainLayout';
-import { AboutPage, ContactPage, HomePage, ProjectsPage, ServicesPage } from './pages';
+import { AboutPage, ContactPage, HomePage, NotFound, ProjectsPage, ServicesPage } from './pages';
 
 const App = () => {
     return (
@@ -12,7 +12,7 @@ const App = () => {
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/projects" element={<ProjectsPage />} />
                     <Route path="/services" element={<ServicesPage />} />
-                    <Route path="*" element={<h1>404</h1>} />
+                    <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
         </Router>
